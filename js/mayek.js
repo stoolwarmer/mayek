@@ -40,19 +40,7 @@ var c3 = canvas.getContext("2d");
 canvas.width = window.innerWidth*2;
 canvas.height = window.innerHeight;
 
-// lets get the resolution of our device.
-var pixelRatio = window.devicePixelRatio || 1;
-console.log(pixelRatio);
 
-// lets scale the canvas and change its CSS width/height to make it high res.
-canvas.style.width = canvas.width +'px';
-canvas.style.height = canvas.height +'px';
-canvas.width *= pixelRatio;
-canvas.height *= pixelRatio;
-
-c1.setTransform(pixelRatio,0,0,pixelRatio,0,0);
-c2.setTransform(pixelRatio,0,0,pixelRatio,0,0);
-c3.setTransform(pixelRatio,0,0,pixelRatio,0,0);
 
 c1.fillStyle = 'red';
 c1.beginPath();
@@ -119,17 +107,7 @@ let c3 = canvas.getContext('2d');
 canvas.width = window.innerWidth*2;
 canvas.height = window.innerHeight;
 
-var pixelRatio = window.devicePixelRatio || 1;
 
-// lets scale the canvas and change its CSS width/height to make it high res.
-canvas.style.width = canvas.width +'px';
-canvas.style.height = canvas.height +'px';
-canvas.width *= pixelRatio;
-canvas.height *= pixelRatio;
-
-c1.setTransform(pixelRatio,0,0,pixelRatio,0,0);
-c2.setTransform(pixelRatio,0,0,pixelRatio,0,0);
-c3.setTransform(pixelRatio,0,0,pixelRatio,0,0);
 	 
 	 c1.fillStyle = 'red';
 c1.beginPath();
